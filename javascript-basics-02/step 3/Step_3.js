@@ -1,4 +1,8 @@
-var displayText = document.getElementById('name1');
-    displayText.onkeyup = function() {
-      document.getElementById('displayBox').innerHTML = name1.value;
-    }
+let div= document.createElement("div");
+document.body.appendChild(div);
+div.className = "displayBox";
+var insert = document.querySelector(".displayBox");
+var input = document.getElementById("name");
+document.getElementById("name").onkeyup = function (){
+    insert.innerHTML = input.value;
+};
